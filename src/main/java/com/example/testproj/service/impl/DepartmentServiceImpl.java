@@ -1,6 +1,5 @@
 package com.example.testproj.service.impl;
 
-import com.example.testproj.entity.Department;
 import com.example.testproj.json.dto.DepartmentDto;
 import com.example.testproj.json.mapper.DepartmentMapper;
 import com.example.testproj.repository.DepartmentRepository;

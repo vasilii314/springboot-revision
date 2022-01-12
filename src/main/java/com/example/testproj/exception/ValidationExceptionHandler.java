@@ -42,8 +42,9 @@ public class ValidationExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(RuntimeException.class)
-    public ResponseEntity<Object> handleIllegalArgumentException(RuntimeException e, WebRequest req) {
-        Map<String, Object> body = new HashMap<>();;
+    public ResponseEntity<Object> handleRuntimeException(RuntimeException e, WebRequest req) {
+        e.printStackTrace();
+        Map<String, Object> body = new HashMap<>();
         body.put("timestamp", System.currentTimeMillis());
         body.put("status", 400);
         body.put("message", "Bad request");

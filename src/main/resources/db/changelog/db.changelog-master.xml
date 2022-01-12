@@ -7,4 +7,5 @@
 
     <include  file="db/changelog/changelog-1-create-department-table.xml"/>
     <include  file="db/changelog/changelog-2-create-person-table.xml"/>
+    <include  file="db/changelog/changelog-3-create-new-person-table.xml"/>
 </databaseChangeLog>
